@@ -1,0 +1,234 @@
+/* Styles for mobile screens */
+@media screen and (max-width: 780px) {
+
+    /* nav bar toggle icon */
+    #menu-icon {
+        display: block;
+        font-size: 1.6rem;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar ul {
+        display: block;
+    }
+
+    .navbar ul li {
+        margin: 1rem 0;
+    }
+
+    /* home section */
+    .home {
+        flex-direction: column-reverse;
+        padding: 50px 5%;
+        height: auto;
+    }
+
+    .home-content {
+        margin-top: 3rem;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .home-content h3 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .home-sci {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home-sci a {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+        margin: 1rem 0.5rem;
+    }
+
+    .home-sci button {
+        font-size: 1rem;
+        margin-right: 0;
+        margin: 0.5rem;
+    }
+
+    .home-sci button i {
+        margin-left: 10px;
+    }
+
+    .profile-img img {
+        margin-top: 8rem;
+        height: 70vw;
+        width: 70vw;
+    }
+
+
+    /* about section */
+    .about {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        padding: 2rem;
+    }
+
+    .about-img img {
+        margin-top: 1rem;
+        width: 80vw;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-content .about-info h3 {
+        font-size: 1.8rem;
+    }
+
+    .about-content .about-info p {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .about-content .education {
+        display: inline-block;
+        padding: 15px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* skills section */
+    .skills-heading {
+        margin-top: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+
+    }
+
+    .skill-main {
+        grid-template-columns: 1fr;
+        grid-row-gap: 1.5rem;
+        grid-column-gap: 0;
+    }
+
+    .skill-left {
+        margin-left: 0;
+        padding: 2rem;
+    }
+
+    .skill-left .skill-bar .info p i {
+        font-size: 16px;
+    }
+
+    .radial-bars {
+        justify-content: center;
+    }
+
+    .radial-bars .radial-bar {
+        width: 80%;
+        height: 200px;
+        margin-bottom: 1.5rem;
+    }
+
+    .radial-bars .radial-bar svg {
+        width: 100px;
+        height: 140px;
+    }
+
+    .radial-bar .percentage,
+    .progress-bar .text {
+        font-size: 14px;
+    }
+
+
+    /* project section  */
+    .projects {
+        padding: 20px;
+    }
+
+    .projects .box-container {
+        gap: 2rem;
+    }
+
+
+    /* contact section  */
+    .contact-heading {
+        margin-top: 2rem;
+    }
+
+    .contact {
+        padding: 0.8rem;
+    }
+
+    form .input-box {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .input-box .input-field {
+        width: 90%;
+    }
+
+    .textarea-field .item {
+        width: 90%;
+    }
+
+
+    /* footer section */
+    .footer {
+        padding: 2rem 5%;
+    }
+
+    .footer-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .home-sci {
+        flex-direction: row;
+    }
+
+    .home-sci button {
+        letter-spacing: 2.5px;
+        width: 90%;
+    }
+
+    .skill-left h2,
+    .skill-right h2 {
+        text-underline-offset: 0.3rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .projects .box-container {
+        grid-template-columns: 1fr;
+    }
+}
