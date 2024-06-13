@@ -121,6 +121,6 @@ form.addEventListener("submit", (e) => {
 
 function downloadResume() {
   const resumeLink =
-    "https://drive.google.com/file/d/1FXYmjELRbEyG8iRoyKFSQZR4Eq68RKEn/view?usp=drive_link";
+    "https://drive.google.com/file/d/1cQfrzoR7y7fvbBUKOnJkorqkzwecXYBI/view?usp=drive_link";
   window.open(resumeLink, "_blank");
 }
