@@ -1,5 +1,5 @@
 /* Styles for mobile screens */
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 890px) {
 
     /* nav bar toggle icon */
     #menu-icon {
@@ -83,8 +83,10 @@
 
     .profile-img img {
         margin-top: 8rem;
-        height: 70vw;
-        width: 70vw;
+        height: 55vw;
+        width: 55vw;
+        /* width: 55vmax;
+        height: 55vmax; */
     }
 
 
@@ -98,8 +100,10 @@
 
     .about-img img {
         margin-top: 1rem;
-        width: 80vw;
-        height: auto;
+        width: 60vw;
+        height: 40vmax;
+        /* width: 55vmax; */
+        /* height: 50vmax; */
         margin-left: 0;
     }
 
@@ -113,18 +117,20 @@
 
     .about-content .about-info p {
         margin: 1rem 0;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .about-content .education {
         display: inline-block;
         padding: 15px 20px;
         font-size: 0.9rem;
+        margin-right: 0;
     }
 
     /* skills section */
     .skills-heading {
         margin-top: 0px;
+        margin-bottom: 2rem;
         padding-bottom: 0px;
         padding-top: 0px;
 
@@ -136,10 +142,10 @@
         grid-column-gap: 0;
     }
 
-    .skill-left {
+    /* .skill-left {
         margin-left: 0;
         padding: 2rem;
-    }
+    } */
 
     .skill-left .skill-bar .info p i {
         font-size: 16px;
@@ -230,5 +236,11 @@
 @media (max-width: 480px) {
     .projects .box-container {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 889px) and (max-width: 1040px) {
+    a[href="#contact"] {
+        display: none;
     }
 }

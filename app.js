@@ -120,7 +120,15 @@ form.addEventListener("submit", (e) => {
 });
 
 function downloadResume() {
-  const resumeLink =
-    "https://drive.google.com/file/d/1cQfrzoR7y7fvbBUKOnJkorqkzwecXYBI/view?usp=drive_link";
-  window.open(resumeLink, "_blank");
+  // const resumeLink =
+  //   "https://drive.google.com/file/d/1cQfrzoR7y7fvbBUKOnJkorqkzwecXYBI/view?usp=drive_link";
+  // window.open(resumeLink, "_blank");
+
+  const link = document.createElement('a');
+    link.href = './Ramavtar Varma Resume.pdf';
+    link.download = 'Ramavtar Varma Resume.pdf'; 
+    link.target = '_blank'; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
